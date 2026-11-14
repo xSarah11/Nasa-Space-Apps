@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "ReliQ NASA knowledge base",
+    "purpose": "The ONLY facts the ReliQ chatbot may use. Every fact cites one of the sources below.",
+    "lastVerified": "2026-11-14",
+    "policy": "Facts come only from NASA NSSDCA (nssdc.gsfc.nasa.gov) and the two NASA Science mission pages listed. Anything not written here is treated as 'not in the approved NASA records'.",
+    "sources": [
+      { "id": "nssdc-s3", "title": "NASA NSSDCA — Surveyor 3 (1967-035A)", "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-035A" },
+      { "id": "nssdc-s3-tv", "title": "NASA NSSDCA — Surveyor 3 Television experiment (1967-035A-01)", "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=1967-035A-01" },
+      { "id": "nssdc-a12", "title": "NASA NSSDCA — Apollo 12 Lunar Module (1969-099C)", "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C" },
+      { "id": "nssdc-surveyor", "title": "NASA NSSDCA — Surveyor (1966-1968)", "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/surveyor.html" },
+      { "id": "sci-s3", "title": "NASA Science — Surveyor 3", "url": "https://science.nasa.gov/mission/surveyor-3/" },
+      { "id": "nssdc-opp", "title": "NASA NSSDCA — Opportunity (2003-032A)", "url": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2003-032A" },
+      { "id": "nssdc-opp-img", "title": "NASA NSSDCA — Mars Rover \"Opportunity\" Images", "url": "https://nssdc.gsfc.nasa.gov/planetary/mars/mars_exploration_rovers/merb_images.html" },
+      { "id": "nssdc-opp-cams", "title": "NASA NSSDCA — Opportunity Engineering Cameras (2003-032A-08)", "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=2003-032A-08" },
+      { "id": "nssdc-opp-mag", "title": "NASA NSSDCA — Opportunity Magnet Arrays (2003-032A-07)", "url": "https://nssdc.gsfc.nasa.gov/nmc/experiment/display.action?id=2003-032A-07" },
+      { "id": "sci-mer", "title": "NASA Science — Mars Exploration Rovers: Spirit and Opportunity", "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/" },
+      { "id": "sci-mer-hl", "title": "NASA Science — Spirit and Opportunity: Science Highlights", "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-highlights/" },
+      { "id": "sci-mer-obj", "title": "NASA Science — Spirit and Opportunity: Science Objectives", "url": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/science-objectives/" },
+      { "id": "nssdc-moon", "title": "NASA NSSDCA — Moon Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html" },
+      { "id": "nssdc-mars", "title": "NASA NSSDCA — Mars Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html" }
+    ]
+  },
+
+  "bodies": {
+    "moon": {
+      "name": { "ar": "القمر", "en": "The Moon" },
+      "facts": [
+        { "topic": "size", "fact": "Volumetric mean radius 1,737.4 km; equatorial radius 1,738.1 km.", "source": "nssdc-moon" },
+        { "topic": "mass", "fact": "Mass 0.07346 × 10^24 kg, about 0.0123 of Earth's mass.", "source": "nssdc-moon" },
+        { "topic": "gravity", "fact": "Surface gravity 1.62 m/s² (about 0.165 of Earth's 9.80 m/s²). Escape velocity 2.38 km/s.", "source": "nssdc-moon" },
+        { "topic": "distance", "fact": "Semimajor axis of its orbit around Earth: 384,400 km (0.3844 × 10^6 km). Distance ranges roughly from 357,000 km to 407,000 km over a year.", "source": "nssdc-moon" },
+        { "topic": "orbit", "fact": "Revolution (sidereal) period 27.3217 days; synodic period (full Moon to full Moon) 29.53 days. Sidereal rotation period 655.720 hours.", "source": "nssdc-moon" },
+        { "topic": "temperature", "fact": "Diurnal temperature range at the equator: 95 K to 390 K (about -178 °C to +117 °C).", "source": "nssdc-moon" },
+        { "topic": "atmosphere", "fact": "Extremely tenuous: total mass about 25,000 kg; night-time surface pressure about 3 × 10^-15 bar.", "source": "nssdc-moon" },
+        { "topic": "albedo", "fact": "Bond albedo 0.11; geometric albedo 0.12.", "source": "nssdc-moon" },
+        { "topic": "topography", "fact": "Topographic range (highest to lowest point) about 13 km.", "source": "nssdc-moon" },
+        { "topic": "recession", "fact": "The Moon recedes from Earth at about 3.8 cm per year.", "source": "nssdc-moon" }
+      ]
+    },
+    "mars": {
+      "name": { "ar": "المريخ", "en": "Mars" },
+      "facts": [
+        { "topic": "size", "fact": "Volumetric mean radius 3,389.5 km; equatorial radius 3,396.2 km.", "source": "nssdc-mars" },
+        { "topic": "mass", "fact": "Mass 0.64169 × 10^24 kg, about 0.107 of Earth's mass.", "source": "nssdc-mars" },
+        { "topic": "gravity", "fact": "Mean surface gravity 3.73 m/s² (about 0.38 of Earth's). Escape velocity 5.03 km/s.", "source": "nssdc-mars" },
+        { "topic": "day", "fact": "Length of day 24.6597 hours; sidereal rotation period 24.6229 hours.", "source": "nssdc-mars" },
+        { "topic": "year", "fact": "Sidereal orbit period 686.980 Earth days. Mean distance from the Sun 227.956 million km.", "source": "nssdc-mars" },
+        { "topic": "distance-from-earth", "fact": "Distance from Earth ranges from 54.6 million km to 401.4 million km.", "source": "nssdc-mars" },
+        { "topic": "tilt", "fact": "Obliquity (axial tilt) 25.19°, compared with Earth's 23.44°.", "source": "nssdc-mars" },
+        { "topic": "atmosphere", "fact": "Surface pressure 6.36 mb at mean radius (varies 4.0–8.7 mb by season). Composition by volume: carbon dioxide 95.1%, nitrogen 2.59%, argon 1.94%, oxygen 0.16%, carbon monoxide 0.06%.", "source": "nssdc-mars" },
+        { "topic": "temperature", "fact": "Average temperature about 214 K (-59 °C). Daily range at the Viking 1 Lander site: 184 K to 242 K (-89 °C to -31 °C).", "source": "nssdc-mars" },
+        { "topic": "wind", "fact": "Wind speeds at Viking Lander sites: 2–7 m/s in summer, 5–10 m/s in fall, 17–30 m/s in dust storms.", "source": "nssdc-mars" },
+        { "topic": "moons", "fact": "Two natural satellites: Phobos and Deimos. No ring system.", "source": "nssdc-mars" },
+        { "topic": "topography", "fact": "Topographic range about 30 km (Earth's is about 20 km).", "source": "nssdc-mars" },
+        { "topic": "meridiani", "fact": "Terra Meridiani is also known as the 'Hematite Site' because it shows evidence of coarse-grained hematite, an iron-rich mineral which typically forms in water. It also appeared to be one of the smoothest and safest areas for a landing.", "source": "nssdc-opp" }
+      ]
+    }
+  },
+
+  "vehicles": {
+    "surveyor-3": {
+      "name": { "ar": "سيرفيور ٣", "en": "Surveyor 3" },
+      "planet": "moon",
+      "kind": "lander (three legs, no wheels — it never drove)",
+      "ids": { "nssdcaCospar": "1967-035A", "designation": "Surveyor-C" },
+      "arabicTerms": {
+        "Oceanus Procellarum": "محيط العواصف",
+        "surface sampler / scoop": "المجرفة (جهاز أخذ العينات)",
+        "Atlas-Centaur": "أطلس-سنتور",
+        "Lunar Module": "المركبة القمرية"
+      },
+      "facts": [
+        { "topic": "identity", "fact": "U.S. NASA/JPL lunar lander; the third engineering flight of the Surveyor series and the second Surveyor to achieve a soft landing on the Moon.", "source": "sci-s3" },
+        { "topic": "program-goal", "fact": "The Surveyor program (seven robotic soft-landers) supported the coming crewed Apollo landings: developing and validating soft-landing technology, checking that the Apollo design was compatible with lunar surface conditions, and adding to scientific knowledge of the Moon.", "source": "nssdc-s3" },
+        { "topic": "mission-objectives", "fact": "Specific objectives: soft-land within the Apollo zone east of the Surveyor 1 site; take post-landing TV pictures; obtain data on bearing strength, radar reflectivity and thermal properties of the surface; use the surface sampler to manipulate the surface and watch the effects with the TV camera.", "source": "nssdc-s3" },
+        { "topic": "structure", "fact": "A tripod of thin-walled aluminium tubing with braces; a central mast about 1 m above the tripod apex; three hinged landing legs with shock absorbers, crushable honeycomb aluminium blocks and footpads with crushable bottoms. About 3 m tall.", "source": "nssdc-s3" },
+        { "topic": "power", "fact": "A 0.855 m² array of 792 solar cells on top of the mast generated up to 85 W, stored in rechargeable silver-zinc batteries.", "source": "nssdc-s3" },
+        { "topic": "communications", "fact": "A movable large planar high-gain antenna near the top of the mast for TV images, plus two omnidirectional conical antennas on folding booms, two receivers and two transmitters.", "source": "nssdc-s3" },
+        { "topic": "thermal", "fact": "Two thermally controlled compartments: one kept at 5–50 °C (communications and power electronics), the other at -20 to 50 °C (command and signal processing).", "source": "nssdc-s3" },
+        { "topic": "propulsion", "fact": "Cold-gas nitrogen jets for attitude in cruise, three throttleable vernier engines (130–460 N each) for powered phases including landing, and a solid-propellant retrorocket for main braking.", "source": "nssdc-s3" },
+        { "topic": "mass", "fact": "NSSDCA: 1,026 kg at launch and 296 kg at landing. NASA Science lists the mass as 2,200 lb (997.9 kg) without saying launch or landed.", "source": "nssdc-s3" },
+        { "topic": "instruments", "fact": "A survey TV camera (with an extended glare hood) and a surface sampler; also soil-mechanics, temperature and radar-reflectivity measurements. The surface sampler replaced the approach TV camera.", "source": "nssdc-s3" },
+        { "topic": "launch", "fact": "Launched 17 April 1967 at 07:05:01 UT (2:05:01 a.m. EST) on an Atlas-Centaur (AC-12) from Launch Complex 36B, Cape Canaveral.", "source": "nssdc-s3" },
+        { "topic": "parking-orbit", "fact": "Centaur burned about 5 minutes into a 167 km circular parking orbit, then restarted 22 min 9 s later to send Surveyor toward the Moon. A midcourse maneuver came 21.9 hours after liftoff.", "source": "nssdc-s3" },
+        { "topic": "descent", "fact": "On 20 April at 00:01:06 UT, at 76 km altitude and 2,626 m/s, the vernier engines and main retrorocket were ignited; speed was 137 m/s at retro burnout, then the retrorocket and radar were jettisoned and the verniers continued the descent.", "source": "nssdc-s3" },
+        { "topic": "bumpy-landing", "fact": "Highly reflective rocks confused the descent radar; the engines failed to cut off at about 4.3 m (14 ft). The lander bounced to about 10 m (33 ft), then to about 3 m (10 ft), and the third touchdown was soft.", "source": "sci-s3" },
+        { "topic": "bumpy-landing-details", "fact": "Touchdown happened three times because the verniers kept firing. About 20 m between the first and second touchdown sites and 11 m between the second and third. Engines were shut off 34 seconds after initial touchdown by a command from Earth. The craft slid about 30 cm after final touchdown.", "source": "nssdc-s3" },
+        { "topic": "landing-time", "fact": "Initial touchdown 00:04:17 UT and final touchdown 00:04:53 UT on 20 April 1967.", "source": "nssdc-s3" },
+        { "topic": "landing-site", "fact": "Southeastern Oceanus Procellarum at 3.0162° S, 336.582° E (23.418° W), from Lunar Reconnaissance Orbiter images. It rests on a 14° slope inside a subdued crater about 200 m wide, roughly 370 km south of Copernicus crater.", "source": "nssdc-s3" },
+        { "topic": "first-pictures", "fact": "The first TV picture was transmitted less than an hour after landing.", "source": "sci-s3" },
+        { "topic": "pictures", "fact": "The TV camera returned 6,326 pictures.", "source": "nssdc-s3" },
+        { "topic": "camera", "fact": "Vidicon camera with 25 mm and 100 mm focal-length lenses, shutters, filters and iris, mounted under a mirror that could move in azimuth and elevation.", "source": "nssdc-s3-tv" },
+        { "topic": "camera-speed", "fact": "About 20 seconds to transmit one 200-line picture; 600-line pictures were also possible using digital picture transmission.", "source": "sci-s3" },
+        { "topic": "camera-mirrors", "fact": "Two flat auxiliary mirrors on the frame gave the camera a view of the ground beneath the engines and of one footpad.", "source": "nssdc-s3" },
+        { "topic": "surface-sampler", "fact": "A 12 cm long by 5 cm wide scoop on a 1.5 m pantograph arm. Surveyor 3 was the first Surveyor to carry it. It was first used two days after landing and operated for a total of 18 hours 22 minutes.", "source": "nssdc-s3" },
+        { "topic": "soil-tests", "fact": "On commands from Earth it made 4 trenches, 4 bearing tests and 13 impact tests, digging up to 18 cm (7 in) deep and reaching up to 1.5 m (5 ft) from the lander.", "source": "sci-s3" },
+        { "topic": "soil-result", "fact": "The soil had a consistency like wet sand and a bearing strength of about 0.7 kg/cm² (10 psi, 98 kPa) — solid enough to support an Apollo Lunar Module.", "source": "sci-s3" },
+        { "topic": "eclipse", "fact": "Surveyor 3 recorded images of an eclipse of the Sun by the Earth, with related thermal measurements. (The approved sources do not give the date.)", "source": "nssdc-s3" },
+        { "topic": "end-of-mission", "fact": "It operated through the lunar day until after local sunset on 3 May 1967. Last data were returned on 4 May 1967 at 00:04 UT; it did not come back to life after the two-week lunar night. All mission objectives were accomplished.", "source": "nssdc-s3" },
+        { "topic": "glare", "fact": "Excessive glare in some images was attributed to dust or erosion on the mirror caused by the engines firing for so long during touchdown.", "source": "nssdc-s3" },
+        { "topic": "program-cost", "fact": "The whole Surveyor program built and launched seven spacecraft for a total cost of $469 million.", "source": "nssdc-s3" },
+        { "topic": "apollo-12", "fact": "Apollo 12's lunar module Intrepid landed on 19 November 1969 (UT) about 180 m from Surveyor 3. On their second moonwalk (20 November UT), Pete Conrad and Alan Bean examined it, took photographs and removed about 10 kg of parts, including the TV camera and the soil scoop, to study the effects of nearly 2.5 years on the lunar surface.", "source": "nssdc-s3" },
+        { "topic": "camera-museum", "fact": "The returned Surveyor 3 camera is on display at the Smithsonian National Air and Space Museum in Washington, D.C.", "source": "nssdc-s3-tv" },
+        { "topic": "team", "fact": "Project Manager Howard H. Haglund (JPL); Project Scientist Leonard D. Jaffe (JPL); Program Manager Benjamin Milwitzky (NASA HQ). TV experiment Principal Investigator: Eugene M. Shoemaker.", "source": "nssdc-s3" }
+      ],
+      "timeline": [
+        { "date": "1967-04-17", "event": "Launch, 07:05:01 UT, Atlas-Centaur, Cape Canaveral LC-36B", "source": "nssdc-s3" },
+        { "date": "1967-04-20", "event": "Landing: first touchdown 00:04:17 UT, final 00:04:53 UT", "source": "nssdc-s3" },
+        { "date": "1967-04-22", "event": "Surface sampler first used (two days after landing)", "source": "nssdc-s3" },
+        { "date": "1967-05-03", "event": "Local sunset; operations continued until after sunset", "source": "nssdc-s3" },
+        { "date": "1967-05-04", "event": "Last data received, 00:04 UT", "source": "nssdc-s3" },
+        { "date": "1969-11-19", "event": "Apollo 12 lunar module lands about 180 m away (UT)", "source": "nssdc-a12" },
+        { "date": "1969-11-20", "event": "Conrad and Bean visit Surveyor 3 and remove about 10 kg of parts (UT)", "source": "nssdc-a12" }
+      ],
+      "knownDiscrepancies": [
+        "Mass: NSSDCA gives 1,026 kg at launch / 296 kg landed; NASA Science gives 997.9 kg (2,200 lb) without specifying.",
+        "Apollo 12 dates: NASA Science says landing Nov 18 and second EVA Nov 19, 1969 (U.S. time); NSSDCA gives 19 and 20 November 1969 in UT.",
+        "Landing time: NASA Science gives 00:04:17 UT (first touchdown); NSSDCA also gives final touchdown 00:04:53 UT."
+      ],
+      "notInApprovedSources": [
+        "The exact date of the eclipse",
+        "The cost of Surveyor 3 alone",
+        "Any claims about bacteria found in the returned camera"
+      ]
+    },
+
+    "opportunity": {
+      "name": { "ar": "أوبورتيونيتي", "en": "Opportunity" },
+      "planet": "mars",
+      "kind": "six-wheeled solar-powered rover",
+      "ids": { "nssdcaCospar": "2003-032A", "alternateNames": ["MER-B", "Mars Exploration Rover B", "MER-1", "Mars Exploration Rover 1"] },
+      "arabicTerms": {
+        "Meridiani Planum": "سهل ميريدياني",
+        "blueberries": "التوت الأزرق",
+        "hematite": "الهيماتيت",
+        "gypsum": "الجبس",
+        "Rock Abrasion Tool (RAT)": "أداة كشط الصخور",
+        "Endeavour crater": "فوهة إنديفور",
+        "Endurance crater": "فوهة إنديورانس",
+        "Eagle crater": "فوهة إيغل"
+      },
+      "facts": [
+        { "topic": "identity", "fact": "One of two identical twin rovers (with Spirit) of NASA's Mars Exploration Rover mission, launched to Mars in mid-2003. The MER-1 rover was later renamed Opportunity.", "source": "nssdc-opp" },
+        { "topic": "objective", "fact": "Look for signs of past water activity on Mars. Science goals: help determine if life ever arose on Mars, characterize its climate and geology, and prepare for human exploration.", "source": "nssdc-opp" },
+        { "topic": "seven-objectives", "fact": "Seven science objectives: find rocks and soils holding clues to past water; map minerals, rocks and soils around the site; find which geologic processes shaped the terrain; provide 'ground truth' for orbiter observations; search for iron-bearing minerals and minerals that contain water or formed in water; characterize rock and soil mineralogy and textures; find clues to past environments with liquid water and assess whether they could support life.", "source": "sci-mer-obj" },
+        { "topic": "body", "fact": "A box-like chassis on six wheels. The 'warm electronics box' holds the computer, batteries and electronics; thermal control uses gold paint, aerogel insulation, heaters, thermostats and radiators. Solar arrays look like a pair of swept-back wings.", "source": "nssdc-opp" },
+        { "topic": "wheels", "fact": "Rocker-bogie suspension; each wheel has its own motor; the two front and two rear wheels steer independently. Top speed about 3.75 cm/s; average 1 cm/s or less on flat hard ground because of hazard-avoidance. Designed to withstand a 45° tilt but programmed to avoid tilts above 30°.", "source": "nssdc-opp" },
+        { "topic": "power", "fact": "Solar arrays generate up to 140 W in full Sun; energy is stored in two rechargeable batteries.", "source": "nssdc-opp" },
+        { "topic": "computer-comms", "fact": "Onboard computer with 128 Mb RAM. X-band communication with Earth through a high-gain dish and a low-gain omni antenna; a UHF antenna talks to orbiting spacecraft.", "source": "nssdc-opp" },
+        { "topic": "mass", "fact": "Rover mass 185 kg. Lander platform 348 kg; backshell and parachute 209 kg; heat shield 78 kg; cruise stage 193 kg; propellant 50 kg. Mass at Mars entry 827 kg.", "source": "nssdc-opp" },
+        { "topic": "mast", "fact": "Pancam (panoramic camera) and the two Navcams sit on the Pancam mast about 1.4 m above the base of the wheels; the mast is also a periscope for the Mini-TES (Miniature Thermal Emission Spectrometer).", "source": "nssdc-opp" },
+        { "topic": "arm", "fact": "The instrument deployment device (robotic arm) carries the Alpha Particle X-Ray Spectrometer (APXS), Mössbauer Spectrometer, Microscopic Imager and Rock Abrasion Tool (RAT). Pancam, Mini-TES, APXS, Mössbauer, MI and RAT together are the Athena science package.", "source": "nssdc-opp" },
+        { "topic": "hazcams-navcams", "fact": "Four black-and-white Hazcams (two front, two rear, about 120° × 120° view) watch up to 3 m around the rover for obstacles; two Navcams on the mast form a stereo pair with a 45° × 45° view.", "source": "nssdc-opp-cams" },
+        { "topic": "magnets", "fact": "Three magnet arrays collect magnetic dust: one on the RAT, one on the front of the rover, and a sweep magnet on the deck in view of Pancam.", "source": "nssdc-opp-mag" },
+        { "topic": "launch", "fact": "Launched on a heavy Delta II 7925H on 8 July 2003 at 03:18:15 UT (7 July, 11:18:15 p.m. EDT) from Cape Canaveral.", "source": "nssdc-opp" },
+        { "topic": "cruise", "fact": "The cruise phase ended on 11 December 2003, 45 days before Mars entry.", "source": "nssdc-opp" },
+        { "topic": "entry-descent-landing", "fact": "Entered the atmosphere on 25 January 2004 at 19,300 km/h with a mass of 827 kg. The aeroshell slowed it for about four minutes to 1,600 km/h; the parachute slowed it to about 300 km/h; at about 100 m retrorockets fired and airbags inflated. It hit at roughly 50 km/h, bounced and rolled, and stopped in a small crater.", "source": "nssdc-opp" },
+        { "topic": "landing-time", "fact": "Landing at 04:54:22.7 UT spacecraft time (05:05 UT Earth-received time), about 1:15 p.m. local Mars time, in the latter half of southern summer. NASA Science gives the date as January 25, 2004 UT (January 24 PST).", "source": "sci-mer-hl" },
+        { "topic": "landing-site", "fact": "Came to rest in a crater about 20 m across (later called Eagle crater) at 1.946° S, 354.473° E in Meridiani Planum (Terra Meridiani).", "source": "nssdc-opp" },
+        { "topic": "egress", "fact": "During the first 4 days it deployed its mast and high-gain antenna, stood up, imaged and calibrated, chose a path and drove off the lander deck.", "source": "nssdc-opp" },
+        { "topic": "planned-length", "fact": "The mission was planned to last three months.", "source": "sci-mer-hl" },
+        { "topic": "eagle-crater", "fact": "Layered outcrop rocks only about 10 cm tall lined Eagle crater. Studies there revealed an evaporating body of salty water. Eagle crater is about 22 m across.", "source": "nssdc-opp-img" },
+        { "topic": "blueberries", "fact": "Small spherical objects 1–2 mm across (BB-sized), nicknamed 'blueberries', are embedded in the outcrop rocks such as 'El Capitan'. Because they are not concentrated in particular layers, a volcanic or impact origin is less likely (though not completely ruled out); another possible origin is minerals coming out of solution inside porous, water-soaked rock.", "source": "nssdc-opp-img" },
+        { "topic": "blueberries-hematite", "fact": "The 'blueberries' are small, spherical hematite deposits; hematite typically forms in water.", "source": "sci-mer-hl" },
+        { "topic": "blueberries-fram", "fact": "NASA Science dates the hematite 'blueberries' investigation near Fram crater to April 2004.", "source": "sci-mer-hl" },
+        { "topic": "first-grind", "fact": "First rock grinding on sol 30 (23 February 2004): the RAT cut about 4 mm deep and a 45.5 mm patch into the rock 'McKittrick', unexpectedly slicing two 'blueberries' in half.", "source": "nssdc-opp-img" },
+        { "topic": "wheel-trench", "fact": "It dragged one wheel back and forth to dig a trench about 50 cm long, 20 cm wide and 9 cm deep, at a spot where Mini-TES had detected crystalline hematite.", "source": "nssdc-opp-img" },
+        { "topic": "lion-king", "fact": "The 'Lion King' panorama, taken on sols 58 and 60, has 558 images and more than 75 MB of data — the largest panorama either rover captured in 2004.", "source": "sci-mer" },
+        { "topic": "endurance", "fact": "Endurance crater: Opportunity entered it in June 2004 (two sols after sol 131, 6 June 2004). Its exposed walls were a window to what lies beneath the surface, with at least three distinct bands of rock. Eagle crater had not been deep enough to show what came before the water.", "source": "nssdc-opp-img" },
+        { "topic": "craters", "fact": "Opportunity visited and studied well over 100 craters of all sizes during its 14 years on Mars.", "source": "sci-mer-hl" },
+        { "topic": "endeavour", "fact": "Endeavour crater is 22 km (14 miles) across. Opportunity began investigating its western rim in August 2011.", "source": "sci-mer-hl" },
+        { "topic": "gypsum", "fact": "Bright gypsum veins near Endeavour's rim likely formed when water flowed through underground fractures.", "source": "sci-mer-hl" },
+        { "topic": "clays", "fact": "Clay minerals at Endeavour formed in neutral-pH water — the friendliest environment for ancient microbial life among the places Opportunity studied.", "source": "sci-mer-hl" },
+        { "topic": "marathon", "fact": "On sol 3968 (24 March 2015) a 46.5 m drive brought its total to 42.198 km — passing a marathon distance.", "source": "sci-mer-hl" },
+        { "topic": "dust-cleaning", "fact": "By early 2014 wind had cleared much of the dust from its solar panels, visible in its January 2014 and March 2014 self-portraits (Pancam).", "source": "sci-mer-hl" },
+        { "topic": "weather", "fact": "Opportunity also monitored clouds, dust, atmospheric opacity (tau) and dust effects on its solar panels.", "source": "sci-mer-hl" },
+        { "topic": "end", "fact": "Its last communication with Earth was on 10 June 2018, as a planet-wide dust storm covered its location. It had explored for over 14 years.", "source": "nssdc-opp" },
+        { "topic": "distance", "fact": "It drove 45.16 km (28.06 miles) before falling silent in June 2018. This off-Earth roving distance record held until 11 October 2026, when Perseverance reached 45.22 km (28.10 miles).", "source": "sci-mer" },
+        { "topic": "spirit", "fact": "Its twin Spirit landed on 3 January 2004 at Gusev Crater and drove 7.7 km (4.8 miles); Spirit's mission concluded in 2010.", "source": "sci-mer" },
+        { "topic": "images", "fact": "The two rovers together returned more than 300,000 raw images.", "source": "sci-mer" },
+        { "topic": "team", "fact": "Project Scientist Joy Anne Crisp (JPL); Project Manager Peter C. Theisinger (JPL); Program Manager Firouz M. Naderi (JPL); Program Scientist James B. Garvin (NASA HQ). Pancam Principal Investigators: James F. Bell III and Steven W. Squyres.", "source": "nssdc-opp" }
+      ],
+      "timeline": [
+        { "date": "2003-07-08", "event": "Launch 03:18:15 UT (7 July 11:18 p.m. EDT), Delta II 7925H, Cape Canaveral", "source": "nssdc-opp" },
+        { "date": "2003-12-11", "event": "Cruise phase ends, 45 days before entry", "source": "nssdc-opp" },
+        { "date": "2004-01-25", "event": "Entry, descent and airbag landing in Meridiani Planum (24 Jan PST)", "source": "nssdc-opp" },
+        { "date": "2004-02-23", "event": "Sol 30: first RAT grind on 'McKittrick'", "source": "nssdc-opp-img" },
+        { "date": "2004-06", "event": "Enters Endurance crater", "source": "nssdc-opp-img" },
+        { "date": "2011-08", "event": "Begins exploring Endeavour crater's western rim", "source": "sci-mer-hl" },
+        { "date": "2015-03-24", "event": "Sol 3968: passes marathon distance (42.198 km)", "source": "sci-mer-hl" },
+        { "date": "2018-06-10", "event": "Last communication; planet-wide dust storm", "source": "sci-mer" }
+      ],
+      "knownDiscrepancies": [
+        "Landing date: NASA Science main page says January 24, 2004 (U.S. time); NSSDCA and the Science Highlights page give 25 January 2004 UT.",
+        "Launch date: 8 July 2003 in UT = 7 July 2003 in U.S. Eastern time.",
+        "Eagle crater size: NSSDCA spacecraft page says about 20 m; NSSDCA image page says about 22 m."
+      ],
+      "notInApprovedSources": [
+        "Who chose the rover's name and the naming contest",
+        "Getting stuck in the 'Purgatory' dune",
+        "Heat Shield Rock (the meteorite)",
+        "Victoria crater",
+        "The 32° slope record or comparisons with Lunokhod 2",
+        "Perseverance Valley and the official end-of-mission declaration date",
+        "The spacecraft's total launch mass"
+      ]
+    }
+  }
+}
