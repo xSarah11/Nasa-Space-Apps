@@ -80,6 +80,17 @@ export default function PlanetMap({ planet, rovers, selectedId, onSelect, lang }
 
   const [flyTarget, setFlyTarget] = useState<Fly>(null);
 
+  // `cacheComponents` keeps visited pages alive inside a hidden <Activity>. Hiding runs effect
+  // cleanups, so react-leaflet calls map.remove(), but its state survives. When the page is shown
+  // again the layers were being re-added to that destroyed map ("reading 'appendChild'").
+  // Give every visible period its own fresh MapContainer instead.
+  const [mapKey, setMapKey] = useState<number | null>(null);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- mount the map only while shown
+    setMapKey((k) => (k ?? 0) + 1);
+    return () => setMapKey(null);
+  }, []);
+
   const layer = planet.layers.find((l) => l.id === layerId) ?? planet.layers[0];
   const allFailed = planet.layers.every((l) => failed[l.id]);
 
@@ -113,7 +124,9 @@ export default function PlanetMap({ planet, rovers, selectedId, onSelect, lang }
 
   return (
     <div className={`relative h-full w-full ${allFailed ? `map-fallback-${planet.id}` : ""}`}>
+      {mapKey !== null && (
       <MapContainer
+        key={mapKey}
         crs={L.CRS.EPSG4326}
         center={[0, 0]}
         zoom={1}
@@ -165,6 +178,7 @@ export default function PlanetMap({ planet, rovers, selectedId, onSelect, lang }
         <FlyTo target={flyTarget} />
         <Readout radiusKm={planet.radiusKm} />
       </MapContainer>
+      )}
 
       {/* Layer panel */}
       <div className="absolute right-2 top-2 z-[600] flex flex-col items-end gap-2">
