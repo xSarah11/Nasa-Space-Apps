@@ -12,13 +12,13 @@ hear its first-person story, talk with it (Claude-powered chatbot grounded in NA
 ## 📸 Screenshots
 
 **Home: choose a world**
-![Home page](screenshots/home.png)
+![Home page](screenshots/home-en.png)
 
 **Mission: short decision-based quiz**
-![Mission page](screenshots/mission.png)
+![Mission page](screenshots/mission-en.png)
 
 **Leaderboard: earn XP and climb the ranks**
-![Leaderboard page](screenshots/leaderboard.png)
+![Leaderboard page](screenshots/leaderboard-en.png)
 
 ## 🛰️ NASA open data | بيانات ناسا المفتوحة
 
