@@ -1,5 +1,7 @@
 # ReliQ | ريليك 🚀
 
+🌐 **Live site | الموقع:** https://reliq-nasa.vercel.app
+
 An interactive learning platform that helps students aged 14–18 explore **one spacecraft per world**:
 **Surveyor 3** on the Moon (1967) and the **Opportunity** rover on Mars (2004–2018).
 Students pick a world (shown as a NASA-textured 3D globe), find the spacecraft on an interactive map, inspect it in 3D on realistic ground,
